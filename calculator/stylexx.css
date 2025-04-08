@@ -1,0 +1,43 @@
+body {
+  background: linear-gradient(120deg, rgb(202, 122, 202), rgb(156, 97, 136));
+}
+
+.btn {
+  background-color: rgb(150, 150, 231);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 500;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 7px;
+  row-gap: 5px;
+  margin-bottom: 5px;
+}
+.col-sm-4 {
+  margin: 0;
+}
+
+.card {
+  border: 2px solid rgb(142, 141, 143);
+  background: #31312c;
+}
+.bt {
+  background-color: #ec911a;
+}
+.btn.bt:hover {
+  background-color: rgb(170, 116, 35);
+  color: #fff;
+}
+.btn:hover {
+  background-color: rgb(99, 93, 93);
+  color: #fff;
+}
+
+input {
+  background-color: #3f3b3b !important;
+  color: #fff !important;
+}

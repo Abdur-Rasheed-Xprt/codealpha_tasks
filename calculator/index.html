@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="stylexx.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container mt-5 d-flex justify-content-center">
+      <div class="col-sim-4 rounded-3">
+        <div class="card px-2 rounded-3 shadow-lg p-3 mb-5">
+          <div class="inputt mb-2 mt-1 bg-muted">
+            <input
+              type="text"
+              id="input"
+              class="form-control border-0"
+              placeholder="Enter..."
+              readonly
+            />
+          </div>
+          <div class="buttons roww">
+            <div class="col-sim-4">
+              <button class="btn bt" id="clear" onclick="clearAll()">AC</button>
+            </div>
+            <div class="col-sim-4">
+              <button class="btn bt" id="delete" onclick="deleteOne()">
+                Del
+              </button>
+            </div>
+            <div class="col-sim-4">
+              <button class="btn bt" id="operatort" onclick="appendValue('%')">
+                %
+              </button>
+            </div>
+            <div class="col-sim-4">
+              <button class="btn bt" id="operatord" onclick="appendValue('/')">
+                /
+              </button>
+            </div>
+            <div class="col-sim-4">
+              <button class="btn" onclick="appendValue('7')">7</button>
+            </div>
+            <div class="col-sim-4">
+              <button class="btn" onclick="appendValue('8')">8</button>
+            </div>
+            <div class="col-sim-4">
+              <button class="btn" onclick="appendValue('9')">9</button>
+            </div>
+            <div class="col-sim-4">
+              <button class="btn bt" id="operatorx" onclick="appendValue('*')">
+                *
+              </button>
+            </div>
+            <div class="col-sim-4">
+              <button class="btn" onclick="appendValue('4')">4</button>
+            </div>
+            <div class="col-sim-4">
+              <button class="btn" onclick="appendValue('5')">5</button>
+            </div>
+            <div class="col-sim-4">
+              <button class="btn" onclick="appendValue('6')">6</button>
+            </div>
+            <div class="col-sim-4">
+              <button class="btn bt" id="operatorm" onclick="appendValue('-')">
+                -
+              </button>
+            </div>
+            <div class="col-sim-4">
+              <button class="btn" onclick="appendValue('1')">1</button>
+            </div>
+            <div class="col-sim-4">
+              <button class="btn" onclick="appendValue('2')">2</button>
+            </div>
+            <div class="col-sim-4">
+              <button class="btn" onclick="appendValue('3')">3</button>
+            </div>
+            <div class="col-sim-4">
+              <button class="btn bt" id="operatorp" onclick="appendValue('+')">
+                +
+              </button>
+            </div>
+            <div class="col-sim-4">
+              <button class="btn" onclick="appendValue('00')">00</button>
+            </div>
+            <div class="col-sim-4">
+              <button class="btn" onclick="appendValue('0')">0</button>
+            </div>
+            <div class="col-sim-4">
+              <button class="btn" onclick="appendValue('.')">.</button>
+            </div>
+            <div class="col-sim-4">
+              <button class="btn bt" id="cal" onclick="calculate()">=</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    let input = document.getElementById("input");
+    const btn = document.getElementsByClassName("btn");
+    function appendValue(valuee) {
+      input.value += valuee;
+
+      console.log(input.value);
+    }
+    function clearAll() {
+      input.value = "";
+    }
+    function deleteOne() {
+      input.value = input.value.slice(0, -1);
+    }
+    function calculate() {
+      input.value = eval(input.value);
+      if (input.value == "undefined") {
+        console.log("error");
+      }
+    }
+  </script>
+</html>
