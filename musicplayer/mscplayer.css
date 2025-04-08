@@ -1,0 +1,63 @@
+.kard {
+  width: 400px;
+  height: 520px;
+  /* background-color: rgb(240, 197, 172); */
+  background-color: #ffdee3;
+}
+.music {
+  border-radius: 9px;
+  /* color: rgb(243, 6, 57); */
+  background-color: rgb(243, 98, 123);
+}
+.iconsz:nth-child(2) {
+  transform: scale(1.5);
+}
+.text-container {
+  color: rgb(124, 64, 77);
+}
+.iconsz {
+  /* background-color: aquamarine; */
+}
+h3 {
+  color: rgb(247, 129, 155);
+}
+body {
+  background: #022f83a8;
+}
+.icon {
+  padding: 10px;
+  color: rgb(245, 56, 97);
+  border-radius: 50%;
+  box-shadow: 0 5px 5px rgb(143, 139, 139);
+  background-color: white;
+}
+.side-icon {
+  padding: 12px;
+  color: rgb(245, 56, 97);
+  border-radius: 50%;
+  box-shadow: 0 2px 2px rgb(163, 159, 159);
+  background-color: white;
+}
+.side-icon:hover {
+  background-color: rgb(190, 122, 122);
+  color: #fff;
+}
+.target {
+  padding: 20px;
+  background-color: rgb(245, 56, 97);
+  color: white;
+}
+#range {
+  -webkit-appearance: none;
+  width: 90%;
+  height: 5px;
+  background-color: rgb(231, 101, 123);
+}
+#range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: rgb(226, 86, 43);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 5px solid white;
+}

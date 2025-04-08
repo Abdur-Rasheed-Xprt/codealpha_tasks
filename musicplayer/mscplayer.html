@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="mscplayer.css" />
+    <script
+      src="https://kit.fontawesome.com/3fc7022430.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="container d-flex justify-content-center">
+      <div class="card kard shadow-lg rounded-lg my-5">
+        <div class="main-icons d-flex mx-3 mt-4 justify-content-between">
+          <i class="fa-solid side-icon fa-angle-left"></i>
+          <h3>Music Player</h3>
+          <i class="fa-solid side-icon fa-bars"></i>
+        </div>
+        <div class="music mx-5 mt-5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.1"
+            stroke="white"
+            class="size-6 mx-5 px-2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m9 9 10.5-3m0 6.553v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 1 1-.99-3.467l2.31-.66a2.25 2.25 0 0 0 1.632-2.163Zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 0 1-.99-3.467l2.31-.66A2.25 2.25 0 0 0 9 15.553Z"
+            />
+          </svg>
+        </div>
+        <div class="text-container text-center mt-4">
+          <h5 class="heading" id="songname"></h5>
+          <p id="singername"></p>
+        </div>
+        <audio id="song"></audio>
+
+        <input
+          type="range"
+          class="range mx-3"
+          id="range"
+          value="0"
+          min="0"
+          max="100"
+          step="1"
+        />
+        <div class="time d-flex justify-content-between mx-4 text-success">
+          <span class="start" id="start"></span>
+          <span class="total" id="total"></span>
+        </div>
+        <div
+          class="iconsz d-flex justify-content-evenly mt-3 align-items-center"
+        >
+          <i
+            class="fa-solid fa-backward icon"
+            style="font-size: 20px"
+            onclick="prev()"
+          ></i>
+          <i
+            class="fa-solid fa-play icon target"
+            style="font-size: 30px"
+            id="play-button"
+            onclick="audioPlay(0)"
+          ></i>
+          <i
+            class="fa-solid fa-forward icon"
+            style="font-size: 20px"
+            id="net "
+            onclick="next(1)"
+          ></i>
+        </div>
+      </div>
+    </div>
+    <script src="scriptmsp.js"></script>
+  </body>
+</html>
