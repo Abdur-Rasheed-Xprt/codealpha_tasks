@@ -1,0 +1,78 @@
+.first {
+  border: solid red 2px;
+}
+
+.img-one {
+  height: 390px;
+}
+.img-two {
+  height: 250px;
+}
+/* .row-area {
+  height: 700px;
+  border: 3px solid brown;
+} */
+.side-text {
+  overflow: scroll;
+  background-color: rgb(245, 242, 239);
+}
+.text-box {
+  height: 660px;
+  border-left: 1px solid gray;
+}
+img:hover {
+  transform: scale(1.1);
+  transition: 0.6s;
+}
+h3 {
+  color: #333;
+}
+#image {
+  width: 400px;
+  display: none;
+}
+#crossx {
+  position: relative;
+  left: 870px;
+  width: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: 800;
+  color: #fff;
+  background-color: rgb(70, 71, 71);
+  display: none;
+}
+.new {
+  display: block;
+}
+/* .main-img {
+  position: absolute;
+} */
+.myImageGallery {
+  font-family: "Poppins", sans-serif; /* Choose a clean, modern font */
+  font-size: 2rem; /* Make it larger than standard headings */
+  font-weight: bold; /* Add emphasis */
+  color: #180de4; /* Vibrant color to make it pop */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for depth */
+  letter-spacing: 1.5px; /* Slightly space out characters for elegance */
+  text-transform: capitalize; /* Ensure a classy look */
+  border-bottom: 3px solid #6c63ff; /* Add a distinct underline */
+  padding-bottom: 5px; /* Ensure the underline looks clean */
+  margin-top: 10px; /* Add spacing from other elements */
+}
+.navbar {
+  background-color: #888;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  #crossx {
+    left: 470px;
+  }
+}
+@media (max-width: 468px) {
+  #crossx {
+    left: 370px;
+    display: none;
+  }
+}
